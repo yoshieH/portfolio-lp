@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio LP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoshie Horiuchi — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" defer></script>
 </head>
 <body>
-  <h1>My Portfolio</h1>
-  <p>Portfolio LP test page</p>
+<header class="site-header">
+  <a class="brand" href="#top">YOSHIE HORIUCHI</a>
+  <nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<section class="hero shell">
+  <div class="hero-copy reveal">
+    <p class="eyebrow">MULTIDISCIPLINARY DESIGNER</p>
+    <h1>I make products easier to <em>see, understand, and choose.</em></h1>
+    <p class="hero-meta">Product / Digital / Motion / Emerging Technology</p>
+    <a class="text-link" href="#work">View selected work ↓</a>
+  </div>
+  <div class="hero-media placeholder reveal"><span>HERO VISUAL</span><small>placeholder</small></div>
+</section>
+
+<section id="work" class="section shell">
+  <div class="section-head reveal"><p class="index">01</p><p class="eyebrow">SELECTED WORK</p></div>
+  <div class="project-intro reveal">
+    <div><h2>Amazon US / E-commerce Creative</h2><p>Product communication designed to make features easier to understand and choose.</p></div>
+    <dl class="meta-list">
+      <div><dt>ROLE</dt><dd>Visual Design / E-commerce / Content</dd></div>
+      <div><dt>FOCUS</dt><dd>Product communication / Purchase decision support</dd></div>
+    </dl>
+  </div>
+  <div class="wide-media placeholder reveal"><span>AMAZON HERO IMAGE</span><small>16:9 placeholder</small></div>
+</section>
+
+<section class="section section-line shell motion-layout">
+  <div class="reel-frame placeholder reveal"><span>9:16 VIDEO</span><small>Instagram Reel</small></div>
+  <div class="motion-copy reveal">
+    <p class="index">02</p><p class="eyebrow">MOTION / SOCIAL</p>
+    <h2>Instagram Reel</h2>
+    <p>Short-form product content created to communicate product value quickly and clearly.</p>
+    <div class="metric"><strong>100K+</strong><span>Instagram Reel Views</span></div>
+    <dl class="meta-list compact"><div><dt>ROLE</dt><dd>Planning / Shooting / Editing</dd></div></dl>
+  </div>
+</section>
+
+<section class="section section-line shell">
+  <div class="section-head reveal"><p class="index">03</p><p class="eyebrow">PRODUCT DESIGN</p></div>
+  <div class="project-intro narrow reveal"><div><h2>From idea to market.</h2><p>Concept development, design, prototyping, and commercialization.</p></div></div>
+  <div class="product-grid">
+    <article class="product reveal"><div class="product-media placeholder"><span>PRODUCT 01</span></div><h3>Product name</h3><p>Concept / Design</p></article>
+    <article class="product reveal"><div class="product-media placeholder"><span>PRODUCT 02</span></div><h3>Product name</h3><p>Design / Prototyping</p></article>
+    <article class="product reveal"><div class="product-media placeholder"><span>PRODUCT 03</span></div><h3>Product name</h3><p>Design / Commercialization</p></article>
+  </div>
+</section>
+
+<section class="section section-line shell">
+  <div class="section-head reveal"><p class="index">04</p><p class="eyebrow">WEB / E-COMMERCE</p></div>
+  <div class="project-intro reveal">
+    <div><h2>AZUTO</h2><p>Web and e-commerce creative for an automotive accessories brand.</p></div>
+    <dl class="meta-list"><div><dt>ROLE</dt><dd>Web / Content / Visual Communication</dd></div></dl>
+  </div>
+  <div class="browser-media placeholder reveal">
+    <div class="browser-top"><span></span><span></span><span></span></div>
+    <div class="browser-body"><span>WEBSITE SCREENSHOT</span><small>placeholder</small></div>
+  </div>
+</section>
+
+<section class="future">
+  <div class="shell section">
+    <div class="section-head reveal"><p class="index">05</p><p class="eyebrow">EXPLORING WHAT'S NEXT</p></div>
+    <div class="future-title reveal"><h2>AI / XR / Smart Glasses</h2><p>Designing beyond the screen.</p></div>
+    <div class="future-grid">
+      <article class="future-project reveal"><div class="future-media placeholder"><span>SMART GLASSES</span></div><h3>Smart Glasses Prototype</h3><p>Voice, visual feedback, and learning experiences.</p></article>
+      <article class="future-project reveal"><div class="future-media placeholder"><span>AI / XR PROJECT</span></div><h3>XTechBridge Project</h3><p>Conversational AI and reflective experiences.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section shell about">
+  <div class="section-head reveal"><p class="index">06</p><p class="eyebrow">ABOUT</p></div>
+  <div class="about-grid">
+    <div class="about-copy reveal"><h2>A multidisciplinary designer working across product, digital, motion, and marketing.</h2><p>My experience allows me to look at projects from multiple perspectives — from what a product is, to how people understand it, choose it, and experience it.</p></div>
+    <div class="perspectives reveal"><span>Product</span><span>Customer</span><span>Communication</span><span>Business</span></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="shell contact-inner reveal">
+    <p class="eyebrow">CONTACT</p>
+    <h2>LET'S CREATE<br><em>SOMETHING USEFUL.</em></h2>
+    <div class="contact-links"><a href="mailto:hello@example.com">Email ↗</a><a href="#">LinkedIn ↗</a></div>
+    <p class="footer-name">YOSHIE HORIUCHI</p>
+  </div>
+</section>
+</main>
 </body>
 </html>
