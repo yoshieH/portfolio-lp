@@ -1,11 +1,9 @@
 
-const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-document.querySelectorAll('.reveal').forEach(el => {
-  if (reduced) return el.classList.add('is-visible');
+const button = document.querySelector('.lang-toggle');
+const label = document.querySelector('[data-lang-label]');
+button?.addEventListener('click', () => {
+  document.body.classList.toggle('lang-en');
+  const isEn = document.body.classList.contains('lang-en');
+  label.textContent = isEn ? 'JP' : 'EN';
+  document.documentElement.lang = isEn ? 'en' : 'ja';
 });
-if (!reduced) {
-  const obs = new IntersectionObserver(entries => entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); }
-  }), {threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-}
